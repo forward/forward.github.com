@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Droid Sans'), local('DroidSans'), url('http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff');
+}
+
+/** Layout **/
+
+body {
+  font-size: 13px;
+  font-family: 'Droid Sans', Arial, sans-serif;
+  text-align: center;
+  background: #f3f3f3 url("../images/cubes.png");
+}
+
+article {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+header {
+  position: relative;
+  padding: 15px;
+  margin: 20px 0 20px;
+  z-index: 1;
+}
+
+  header #bg_text {
+    font-size: 12em;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    opacity: 0.05;
+    font-weight: bold;
+    z-index: -1;
+  }
+  
+  header p#us {
+    float: right;
+  }
+  
+section {
+  clear: both;
+}
+
+ul#main {
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+  #main li {
+    padding: 10px 15px 10px;
+    border-left: 10px solid #ccc;
+    list-style: none;
+    margin: 0 0 20px 0;
+    background: #fff;
+  }
+  
+  #main li .info h2 {
+    float: left;
+  }
+  
+  #main li .info p {
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 0px;
+  }
+  
+  #main li .meta {
+    clear: both;
+    height: 1px;
+    opacity: 0;
+    -moz-transition: 0.4s all linear;
+    -webkit-transition: 0.4s all linear;
+  }
+  
+  #main li.js   { border-left-color: #06c; }
+  #main li.ruby { border-left-color: #c05; }
+  
+  #main li:hover .meta {
+    opacity: 1;
+    height: 60px;
+    padding-top: 20px;
+  }
+  
+
+/** Misc and Type **/
+
+h1,h2, header #bg_text {
+  font-family:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.6em;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+}
