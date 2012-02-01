@@ -22,9 +22,10 @@ article {
 
 header {
   position: relative;
-  padding: 15px;
+  padding: 15px 0px;
   margin: 20px 0 20px;
   z-index: 1;
+  height: 50px;
 }
 
   header #bg_text {
@@ -37,8 +38,22 @@ header {
     z-index: -1;
   }
   
+  header h1 {
+    float: left;
+  }
+  
+  header h1 a {
+    color: #222;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  
   header p#us {
     float: right;
+    width: 75%;
+    line-height: 18px;
   }
   
 section {
